@@ -1,0 +1,9 @@
+Cinema Booking System
+Ungku Shirin Zahra binti Ungku Saripulakthar (d031810207)
+Muhammad Firdaus Hafizi Bin Sabri (d031810081)
+Muhammad Adib Fahmi Bin Muhammad Shukri (d031810034)
+Muhammad Rifqi bin Ramlan (d031810012)
+
+Additional
+1) KeyPress (Login.cs) - for password textbox
+2) KeyPress (Form3.cs) - duration textbox (int only)
