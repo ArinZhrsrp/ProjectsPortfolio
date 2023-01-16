@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="format.css">
+    <script type="text/javascript">
+        function check() {
+            if (document.registerForm.username.value == "" || document.registerForm.password.value == "" ||
+                document.registerForm.password2.value == "" || document.registerForm.email.value == "") {
+                alert("Please fill in all the textfield.");
+            }
+            else {
+                if (document.registerForm.password.value != document.registerForm.password2.value) {
+                    alert("Please confirm your password.");
+                }
+                else {
+                    window.location.href = "assignment2_productlist.html";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="#c7ae71">
+	<div id="wrapper">
+		<div id="header">
+			<center><br/>UTEM MERCHANDISE ONLINE SHOPPING<br/></center>
+		</div>
+		
+		<div id = "navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+		</div>
+
+	<div id="image">
+		<center><img src="image/utem.jpg"></center>
+	</div>
+		
+
+    <div id="content">
+        <h1><p><center><font size="+3" face="georgia"><marquee behavior="alternate" width="60%">WELCOME TO UTEM ONLINE SHOPPING</marquee></font></center></p></h1>
+        <br />
+        <form name="registerForm" id="registerForm" method="post">
+            <table align="center">
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" id="Username" /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" id="password" /></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" name="password2" id="password2" /></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email" /></td>
+                </tr>
+                <tr>
+                    <td><br /></td>
+                </tr>
+                <tr>
+                    <td class="button" colspan="2" align="center">
+                        <input type="button" name="register" id="register" value="Register" onclick="check()" />
+                        <input type="reset" name="reset" id="reset" value="Clear Form" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br /><br />
+    </div>
+	
+
+	<div id="footer">
+		<p><font face ="arial" color = "666666">&copy kkshirinazrayang 2019</font></p>
+	</div>
+</div>
+
+</body>
+</html>
